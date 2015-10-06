@@ -1,0 +1,88 @@
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.title-image {
+  padding-top: 2%;
+  width: 80%;
+  height: auto;
+}
+
+.bar-mint {
+  background-color: #7fff7f;
+  color: #fff;
+}
+
+.bar-lightblue {
+  background-color: #9BC2CF;
+  color: #fff;
+}
+
+.bg-color {
+  background-color: #BDBDBD;
+  color: #fff;
+}
+
+.yellow {
+  background-color: #FFFCC9;
+}
+
+.button-white {
+  color: #fff;
+}
+
+#side {
+  background: url('../img/bg.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.sidemenu {
+  width: 100%;
+  height: auto;
+}
+
+.fullscreen {
+  max-width: 100%;
+  max-height: 100%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  /*position: fixed;*/
+  right: 0;
+  top: 0;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+.side-menu .item-complex .item-content {
+  background-color: inherit;
+  font-size: 30px;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.main-background {
+  background-color: #ADD8E6;
+}
+
+.full {
+  margin: 3px 0px;
+}
+
+.slider-pager {
+  top: 0;
+  bottom: initial;
+}

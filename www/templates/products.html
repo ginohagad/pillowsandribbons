@@ -1,0 +1,50 @@
+<ion-view view-title="{{ logo }}">
+  <ion-header-bar class="bar-light bar-subheader">
+    <div class="bar bar-header item-input-inset">
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="search" placeholder="Search" ng-model="search">
+      </label>
+      <!-- <button class="button button-clear">
+        Cancel
+      </button> -->
+    </div>
+  </ion-header-bar>
+  <ion-content class="bg-color">
+  <div class="item yellow" style="text-align:right;">
+    <span class="bold">&nbsp;Slide View</span><br><br>
+    <label class="toggle toggle-positive">
+      <input type="checkbox" ng-model="checked">
+      <div class="track">
+        <div class="handle"></div>
+      </div>
+    </label>
+  </h3>
+  </div>
+    <div ng-if="!checked">
+      <div class="list card" ng-repeat="product in products | filter: search" href="#/app/products/{{product.num}}">
+        <div class="item item-image">
+          <img ng-src="img/{{ product.name }}/{{ product.img }}.jpg">
+        </div>
+
+        <div class="item item-icon-left dark" style="font-weight: bold; font-size: 1.5em;">
+          <i class="icon {{ icon }}"></i>
+          {{ product.name | capitalize }} #{{$index + 1}}<br>
+          Colour: {{ product.color | colorcaps }}
+        </div>
+      </div>
+    </div>
+    <div ng-if="checked">
+      <ion-slide-box>
+        <ion-slide ng-repeat="product in products | filter: search" class="center">
+          <img class="fullscreen" ng-src="img/{{ product.name }}/{{ product.img }}.jpg">
+          <div class="item item-icon-left dark lobster" style="font-weight: bold; font-size: 1.5em;">
+            <i class="icon {{ icon }}"></i>
+            {{ product.name | capitalize }} #{{$index + 1}}<br>
+            Colour: {{ product.color | colorcaps }}
+          </div>
+        </ion-slide>
+      </ion-slide-box>
+    </div>
+  </ion-content>
+</ion-view>
